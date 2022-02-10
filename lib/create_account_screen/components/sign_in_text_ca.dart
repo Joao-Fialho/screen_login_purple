@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:screen_login_purple/login_sceen/style.dart';
 
-class SignUpText extends StatelessWidget {
+class SignInTextCa extends StatelessWidget {
   final double height;
   final double width;
-  const SignUpText({Key? key, this.height = 1, this.width = 0.0})
+  const SignInTextCa({Key? key, this.height = 1, this.width = 0.0})
       : super(key: key);
 
   @override
@@ -17,9 +18,11 @@ class SignUpText extends StatelessWidget {
         width: width,
         child: LayoutBuilder(builder: (context, constraints) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/');
+            },
             child: Text(
-              'Sing Up',
+              'Sing In',
               style: TextStyle(
                 color: cPrimaryColor,
                 decoration: TextDecoration.underline,

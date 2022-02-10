@@ -15,29 +15,29 @@ class LoginField extends StatelessWidget {
       width: width,
       child: LayoutBuilder(
         builder: (context, constraints) {
-          return FittedBox(
-            child: Builder(builder: (context) {
-              return Column(
+          return LayoutBuilder(builder: (context, constraints) {
+            return FittedBox(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormFieldApp(
                     height: constraints.maxHeight * 0.5,
                     width: constraints.maxWidth * 1,
                     textApp: 'E-mail',
-                    sizeTop: constraints.maxHeight * 0.9,
-                    fontSize: constraints.maxHeight * 0.2,
+                    sizeTop: constraints.maxHeight * 0.2,
+                    fontSize: constraints.maxHeight * 0.16,
                   ),
                   TextFormFieldApp(
                     height: constraints.maxHeight * 0.5,
                     width: constraints.maxWidth * 1,
                     textApp: 'Password',
-                    sizeTop: constraints.maxHeight * 0.9,
-                    fontSize: constraints.maxHeight * 0.2,
+                    sizeTop: constraints.maxHeight * 0.2,
+                    fontSize: constraints.maxHeight * 0.16,
                   ),
                 ],
-              );
-            }),
-          );
+              ),
+            );
+          });
         },
       ),
     );

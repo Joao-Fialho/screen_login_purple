@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 //cores do app
 final Color cPrimaryColor = Colors.indigo.shade600;
 final Color cForgotPasswordColor = Colors.indigoAccent;
+final Color cTermsPolicyColor = Colors.indigoAccent;
 
 final Color cTextFieldColor = Colors.blueGrey.shade300;
 final Color cEnableBorderTextField = Colors.blueGrey.shade100;
@@ -34,7 +35,6 @@ class TextFormFieldAppCa extends StatelessWidget {
       width: width,
       child: TextFormField(
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.fromLTRB(0, sizeTop, 0, 0),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
                 color: cEnableBorderTextField, width: sizeBorder / 1.3),
@@ -42,8 +42,8 @@ class TextFormFieldAppCa extends StatelessWidget {
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(color: cPrimaryColor, width: sizeBorder),
           ),
-          hintText: textApp,
-          hintStyle: TextStyle(color: cTextFieldColor, fontSize: fontSize),
+          labelText: textApp,
+          labelStyle: TextStyle(color: cTextFieldColor, fontSize: fontSize),
         ),
       ),
     );

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:screen_login_purple/create_account_screen/components/sign_in/sign_in_widget.dart';
-import 'package:screen_login_purple/create_account_screen/components/sign_up_text.dart';
+import 'package:screen_login_purple/create_account_screen/components/sign_in_text_ca.dart';
+import 'package:screen_login_purple/create_account_screen/components/sign_up/sign_up_widget_ca.dart';
 
-class WidgetsBottom extends StatelessWidget {
+class WidgetsBottomCa extends StatelessWidget {
   final double height;
   final double width;
-  const WidgetsBottom({Key? key, this.height = 100, this.width = 0.0})
+  const WidgetsBottomCa({Key? key, this.height = 100, this.width = 0.0})
       : super(key: key);
 
   @override
@@ -19,12 +19,12 @@ class WidgetsBottom extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SignInWidget(
+            SignUpWidgetCa(
               // sizeFont: constraints.maxHeight,
               height: constraints.maxHeight * 0.74,
               width: constraints.maxWidth,
             ),
-            SignUpText(
+            SignInTextCa(
               height: constraints.maxHeight * 0.26,
               width: constraints.maxWidth * 1,
 

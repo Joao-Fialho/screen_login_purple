@@ -20,7 +20,7 @@ class TextFormFieldApp extends StatelessWidget {
   const TextFormFieldApp({
     Key? key,
     this.textApp = '',
-    this.fontSize = 16,
+    this.fontSize = 18,
     this.sizeTop = -20,
     this.sizeBorder = 2,
     this.height = 100,

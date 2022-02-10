@@ -30,7 +30,7 @@ class _RememberMeWidgetState extends State<RememberMeWidget> {
               height: constraints.maxHeight * 0.9,
               sizeBorde: constraints.maxHeight * 0.12,
             ),
-            Container(
+            SizedBox(
               width: constraints.maxWidth * 0.1,
             ),
             RememberMeText(

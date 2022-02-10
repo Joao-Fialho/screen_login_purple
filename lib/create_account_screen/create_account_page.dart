@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:screen_login_purple/create_account_screen/box_widgets/widgets.bottom.dart';
-import 'package:screen_login_purple/create_account_screen/box_widgets/widgets_center.dart';
+import 'package:screen_login_purple/create_account_screen/box_widgets_ca/widgets.bottom_ca.dart';
+import 'package:screen_login_purple/create_account_screen/box_widgets_ca/widgets_center_ca.dart';
 import 'package:screen_login_purple/create_account_screen/components/text_title_ca.dart';
 
 class CreateAccountPage extends StatelessWidget {
@@ -41,10 +41,10 @@ class CreateAccountPage extends StatelessWidget {
                         ),
 
                         // --> MEIO = Caixas de login, Remember e Forgot Password Button
-                        WidgetsCenter(
-                          height: constraints.maxHeight * 0.45,
+                        WidgetsCenterCa(
+                          height: constraints.maxHeight * 0.55,
                         ),
-                        WidgetsBottom(
+                        WidgetsBottomCa(
                           height: constraints.maxHeight * 0.27,
                           width: constraints.maxWidth,
                         ),

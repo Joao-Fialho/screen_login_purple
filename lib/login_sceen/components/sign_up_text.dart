@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:screen_login_purple/create_account_screen/create_account_page.dart';
 import 'package:screen_login_purple/login_sceen/style.dart';
 
 class SignUpText extends StatelessWidget {
@@ -17,7 +18,9 @@ class SignUpText extends StatelessWidget {
         width: width,
         child: LayoutBuilder(builder: (context, constraints) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/createAccount');
+            },
             child: Text(
               'Sing Up',
               style: TextStyle(

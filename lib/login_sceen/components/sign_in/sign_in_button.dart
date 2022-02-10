@@ -11,7 +11,9 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushReplacementNamed(context, '/welcome');
+      },
       child: Container(
         height: height,
         width: height,

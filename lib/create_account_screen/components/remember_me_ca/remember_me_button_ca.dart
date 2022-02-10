@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:screen_login_purple/login_sceen/style.dart';
 
-class RememberMeButton extends StatefulWidget {
+class RememberMeButtonCa extends StatefulWidget {
   final double height;
   final double sizeBorde;
-  const RememberMeButton({Key? key, this.height = 0, this.sizeBorde = 0.0})
+  const RememberMeButtonCa({Key? key, this.height = 0, this.sizeBorde = 0.0})
       : super(key: key);
 
   @override
-  State<RememberMeButton> createState() => _RememberMeButtonState();
+  State<RememberMeButtonCa> createState() => _RememberMeButtonCaState();
 }
 
-class _RememberMeButtonState extends State<RememberMeButton> {
+class _RememberMeButtonCaState extends State<RememberMeButtonCa> {
   bool checkBoxValue = false;
 
   @override

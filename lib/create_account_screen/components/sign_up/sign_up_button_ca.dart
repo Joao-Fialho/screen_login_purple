@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:screen_login_purple/login_sceen/style.dart';
 
-class SignInButton extends StatelessWidget {
+class SignUpButtonCa extends StatelessWidget {
   final double height;
-  const SignInButton({
+  const SignUpButtonCa({
     Key? key,
     this.height = 75,
   }) : super(key: key);
@@ -11,7 +11,9 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushReplacementNamed(context, '/welcome');
+      },
       child: Container(
         height: height,
         width: height,
@@ -27,3 +29,6 @@ class SignInButton extends StatelessWidget {
     );
   }
 }
+
+//validacoes nos campos e mascara
+//forms

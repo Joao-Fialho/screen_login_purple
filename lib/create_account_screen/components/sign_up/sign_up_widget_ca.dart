@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:screen_login_purple/login_sceen/components/sign_in/sign_in_button.dart';
-import 'package:screen_login_purple/login_sceen/components/sign_in/sign_in_text.dart';
+import 'package:screen_login_purple/create_account_screen/components/sign_up/sign_up_button_ca.dart';
+import 'package:screen_login_purple/create_account_screen/components/sign_up/sign_up_text_ca.dart';
 
-class SignInWidget extends StatelessWidget {
+class SignUpWidgetCa extends StatelessWidget {
   final double sizeFont;
   final double height;
   final double width;
-  const SignInWidget(
+  const SignUpWidgetCa(
       {Key? key, this.sizeFont = 25, this.height = 0.745, this.width = 0.0})
       : super(key: key);
 
@@ -21,10 +21,10 @@ class SignInWidget extends StatelessWidget {
           return Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SignInText(
+              SignUpTextCa(
                 sizeFont: constraints.maxHeight * 0.3,
               ),
-              SignInButton(
+              SignUpButtonCa(
                 height: constraints.maxHeight * 1,
               ),
             ],

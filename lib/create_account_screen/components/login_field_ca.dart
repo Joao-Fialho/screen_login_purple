@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: file_names
 
-import '../style_ca.dart';
+import 'package:flutter/material.dart';
+import 'package:screen_login_purple/create_account_screen/style_ca.dart';
 
 class LoginFieldCa extends StatelessWidget {
   final double height;
@@ -16,36 +17,34 @@ class LoginFieldCa extends StatelessWidget {
       width: width,
       child: LayoutBuilder(
         builder: (context, constraints) {
-          return FittedBox(
-            child: Builder(builder: (context) {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  TextFormFieldAppCa(
-                    height: constraints.maxHeight * 0.33,
-                    width: constraints.maxWidth * 1,
-                    textApp: 'Name',
-                    sizeTop: constraints.maxHeight * 0.2,
-                    fontSize: constraints.maxHeight * 0.2,
-                  ),
-                  TextFormFieldAppCa(
-                    height: constraints.maxHeight * 0.33,
-                    width: constraints.maxWidth * 1,
-                    textApp: 'E-mail',
-                    sizeTop: constraints.maxHeight * 0.2,
-                    fontSize: constraints.maxHeight * 0.2,
-                  ),
-                  TextFormFieldAppCa(
-                    height: constraints.maxHeight * 0.33,
-                    width: constraints.maxWidth * 1,
-                    textApp: 'Password',
-                    sizeTop: constraints.maxHeight * 0.2,
-                    fontSize: constraints.maxHeight * 0.2,
-                  ),
-                ],
-              );
-            }),
-          );
+          return LayoutBuilder(builder: (context, constraints) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                TextFormFieldAppCa(
+                  height: constraints.maxHeight * 0.33,
+                  width: constraints.maxWidth * 1,
+                  textApp: 'Name',
+                  sizeTop: constraints.maxHeight * 0.3,
+                  fontSize: constraints.maxHeight * 0.13,
+                ),
+                TextFormFieldAppCa(
+                  height: constraints.maxHeight * 0.33,
+                  width: constraints.maxWidth * 1,
+                  textApp: 'E-mail',
+                  sizeTop: constraints.maxHeight * 0.3,
+                  fontSize: constraints.maxHeight * 0.13,
+                ),
+                TextFormFieldAppCa(
+                  height: constraints.maxHeight * 0.33,
+                  width: constraints.maxWidth * 1,
+                  textApp: 'Password',
+                  sizeTop: constraints.maxHeight * 0.3,
+                  fontSize: constraints.maxHeight * 0.13,
+                ),
+              ],
+            );
+          });
         },
       ),
     );
