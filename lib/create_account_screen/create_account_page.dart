@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:screen_login_purple/login_sceen/box_widgets/widgets.bottom.dart';
-import 'package:screen_login_purple/login_sceen/box_widgets/widgets_center.dart';
-import 'components/text_title.dart';
-import 'style.dart';
+import 'package:screen_login_purple/create_account_screen/box_widgets/widgets.bottom.dart';
+import 'package:screen_login_purple/create_account_screen/box_widgets/widgets_center.dart';
+import 'package:screen_login_purple/create_account_screen/components/text_title_ca.dart';
 
-class ScreenLoginPage extends StatelessWidget {
-  const ScreenLoginPage({Key? key}) : super(key: key);
+class CreateAccountPage extends StatelessWidget {
+  const CreateAccountPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +36,7 @@ class ScreenLoginPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         // --> TITULO = 'Welcome back'
-                        TextTitle(
+                        TextTitleCa(
                           height: constraints.maxHeight * 0.1,
                         ),
 
