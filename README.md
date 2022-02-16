@@ -1,4 +1,5 @@
 # screen_login_purple
+<img src="assets\images\ViewFoto.png" height="500em"/>
 
 A new Flutter project.
 
