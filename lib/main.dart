@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:screen_login_purple/login_sceen/screen_login_page.dart';
-import 'package:screen_login_purple/welcome_screen/welcome_page.dart';
+import 'package:screen_login_purple/view/create_account_screen/view/create_account_page.dart';
+import 'package:screen_login_purple/view/welcome_screen/welcome_page.dart';
 
-import 'create_account_screen/create_account_page.dart';
+import 'view/login_sceen/view/screen_login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => ScreenLoginPage(),
-        '/createAccount': (context) => CreateAccountPage(),
-        '/welcome': (context) => WelcomePage(),
+        '/': (context) => const ScreenLoginPage(),
+        '/createAccount': (context) => const CreateAccountPage(),
+        '/welcome': (context) => const WelcomePage(),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
